@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="months.json"></script>
+    <title>Document</title>
+</head>
+
+<body onload="monthload()">
+    <div class="content">
+        <h1 id="title"></h1>
+        <div class="calendar" id="calendar">
+            <p class="daynames">Sunday</p>
+            <p class="daynames">Monday</p>
+            <p class="daynames">Tuesday</p>
+            <p class="daynames">Wednesday</p>
+            <p class="daynames">Thursday</p>
+            <p class="daynames">Friday</p>
+            <p class="daynames">Saturday</p>
+        </div>
+    </div>
+    <div id="background"
+        onclick="document.getElementById('background').style.display = 'none'; document.getElementById('schedule').style.display = 'none';">
+    </div>
+    <div id="schedule">
+        <div id="scheduleinside">
+            <h1 id="scheduletitle">Schedule an Event</h1>
+            <label for="scheduleinputtitle"> Title:</label>
+            <input type="text" name="scheduleinputtitle" id="scheduleinputtitle" placeholder="Title (0-15 characters)" maxlength="15">
+            <label for="scheduleinputdesc">Description:</label>
+            <input id="scheduleinputdesc" name="scheduleinputdesc" placeholder="Description (0-35 characters)" maxlength="35">
+            <button id="schedulesubmit" onclick="schedulesubmit()">Submit</button>
+        </div>
+    </div>
+    <button class="next"
+        onclick="if (sessionStorage.getItem('monthset')==11) {sessionStorage.setItem('monthset',0);sessionStorage.setItem('yearset', Number(sessionStorage.getItem('yearset'))+1);monthcall(Number(sessionStorage.getItem('monthset')))} else {monthcall(Number(sessionStorage.getItem('monthset')) + 1)}">&#x2192;</button>
+    <button class="back"
+        onclick="if (sessionStorage.getItem('monthset')==0) {sessionStorage.setItem('monthset',11);sessionStorage.setItem('yearset', Number(sessionStorage.getItem('yearset'))-1);monthcall(Number(sessionStorage.getItem('monthset')))} else {monthcall(Number(sessionStorage.getItem('monthset')) - 1)}">&#x2190;</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
