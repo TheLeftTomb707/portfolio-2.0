@@ -1,0 +1,182 @@
+body {
+    background-color: black;
+    margin: auto;
+    width: 99%;
+}
+
+nav {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    background-color: black;
+    border-bottom: solid 2px red;
+    font-family: 'Press Start 2P';
+}
+
+nav h3 {
+    margin: 1% 0% 1% 0%;
+    font-size: 150%;
+}
+
+#nav-items {
+    display: flex;
+    gap: 3%;
+}
+
+#nav-items a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+    font-size: 100%;
+    margin: 0% 0% 0% 0%;
+}
+
+#nav-items a:hover {
+    color: red;
+}
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+#main img {
+    width: 30%;
+    height: auto;
+}
+
+#text {
+    color: whitesmoke;
+    width: 46%;
+    font-family: 'cormorant';
+}
+
+#text h3 {
+    font-family: 'Press Start 2P';
+    font-size: 270%;
+}
+
+#text p {
+    font-size: 175%;
+
+}
+
+#west-mec {
+    text-decoration: none;
+    color: orange;
+}
+
+#certs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+#certs img {
+    width: 18%;
+}
+
+footer {
+    margin-top: 5%;
+    border-top: solid 1px rgb(52, 52, 52);
+}
+
+#soc-icons {
+    display: flex;
+    justify-content: end;
+    margin: 1%;
+    gap: 0.8%;
+}
+
+.social {
+    width: 3.5%;
+}
+
+.social img {
+    width: 100%;
+}
+
+#proj-title {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Press Start 2P';
+    font-size: 270%;
+}
+
+#proj-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2vw 10vw;
+    margin: auto;
+    width: 80%;
+}
+#proj-content a {
+    text-decoration: none;
+}
+#proj-content a:hover {
+    transform: scale(1.08);
+}
+#proj-content a img {
+    width: 20vw;
+    height: 20vw;
+}
+#proj-content a p {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Press Start 2P';
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#con-content {
+    display: flex;
+    margin: 5% 0% 0% 5%;
+}
+
+#con-info {
+    width: 50%;
+    color: whitesmoke;
+    font-family: 'Press Start 2P';
+    font-size: 200%;
+}
+
+#icon-info {
+    font-size: 60%;
+}
+
+.icon-divs {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+
+.icon-img {
+    width: 4%;
+    height: 20%;
+}
+
+form {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Press Start 2P';
+    gap: 5%;
+    border: solid 2px whitesmoke;
+    padding: 0% 0% 0.8% 1%;
+    height: 23vw;
+}
+
+form h2 {
+    color: whitesmoke;
+}
+
+form input {
+    width: 90%;
+    font-family: 'Press Start 2P';
+    padding: 2%;
+}
